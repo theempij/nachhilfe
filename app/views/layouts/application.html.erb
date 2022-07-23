@@ -8,9 +8,21 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <%# <link rel=”canonical” href=https://www.digitalized-accounting.com/> %>
   </head>
 
   <body>
-    <%= yield %>
+  <h1>Judiths geile Nachhilfe</h1>
+  <%= link_to 'Start', root_path %> -
+  <%= link_to 'Der Preis', preis_path %> -
+  <%= link_to 'Für Schüler', fuer_schueler_path %> -
+  <%= link_to 'Für Erwachsene', fuer_erwachsene_path %> -
+  <%= link_to 'Erfahrungsberichte', erfahrungsberichte_path %>
+  <br>
+  <hr>
+  <br>
+
+  <%= yield %>
   </body>
 </html>

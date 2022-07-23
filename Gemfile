@@ -42,6 +42,11 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+# Sentry handles exception monitoring and management
+gem 'sentry-raven'
+gem 'sentry-ruby'
+gem 'sentry-rails'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -51,6 +56,12 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'dotenv-rails'
+  gem 'awesome_print'
+  gem 'pry-byebug'
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-stack_explorer'
 end
 
 group :development do
@@ -62,6 +73,13 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem 'capistrano', require: false
+  gem 'capistrano-opscomplete', require: false
+  gem 'capistrano-passenger', require: false
+  gem 'capistrano-rails', '~> 1.3', require: false
+  gem 'rubocop'
+  gem 'geordi'
+  gem 'highline'
 end
 
 group :test do
