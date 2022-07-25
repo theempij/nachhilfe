@@ -1,8 +1,26 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.17.0"
 
+abort 'You must run this using "bundle exec ..."' unless ENV['BUNDLE_BIN_PATH'] || ENV['BUNDLE_GEMFILE']
+
 set :application, "nachhilfe"
 set :repo_url, "git@github.com:theempij/nachhilfe.git"
+
+# Default value for :log_level is :debug
+set :log_level, :info # %i(debug info error), default: :debug
+
+# Default value for :linked_files is []
+set :linked_files, %w(config/database.yml config/secrets.yml)
+
+# Default value for linked_dirs is []
+set :linked_dirs, %w(log public/system tmp/pids storage)
+
+# Default value for keep_releases is 5
+set :keep_releases, 5
+
+set :ssh_options, {
+  forward_agent: true
+}
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -38,4 +56,4 @@ set :repo_url, "git@github.com:theempij/nachhilfe.git"
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
 
-after 'deploy:symlink:release', 'deploy:restart'
+after 'deploy:updating', 'opscomplete:ruby:ensure'

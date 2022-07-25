@@ -30,6 +30,8 @@ gem "jbuilder"
 # Use Redis adapter to run Action Cable in production
 gem "redis", "~> 4.0"
 
+gem 'pg'
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
@@ -74,6 +76,7 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
   gem 'capistrano', require: false
+  gem 'capistrano-bundler', require: false
   gem 'capistrano-opscomplete', require: false
   gem 'capistrano-passenger', require: false
   gem 'capistrano-rails', '~> 1.3', require: false
