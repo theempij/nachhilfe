@@ -55,7 +55,7 @@ gem 'sentry-rails'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  # gem "debug", platforms: %i[ mri mingw x64_mingw ] # deleted on 25.7.2022 due to dependency issues - using byebug instead. Schuld: Jakob Scholz
   gem 'dotenv-rails'
   gem 'awesome_print'
   gem 'pry-byebug'
@@ -88,3 +88,4 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
