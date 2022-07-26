@@ -266,7 +266,7 @@ GEM
       net-ssh (>= 2.8.0)
     stimulus-rails (1.1.0)
       railties (>= 6.0.0)
-    strscan (3.0.1)
+    strscan (1.0.3)
     thor (1.2.1)
     timeout (0.3.0)
     turbo-rails (1.1.1)
@@ -330,7 +330,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
-  strscan (= 3.0.1)
+  strscan (= 1.0.3)
   turbo-rails
   tzinfo-data
   web-console
