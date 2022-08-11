@@ -5,19 +5,8 @@ class HauptController < ActionController::Base
 
   end
 
-  def preis
+  def impressum
 
   end
 
-  def erfahrungsberichte
-
-  end
-
-  def fuer_schueler
-
-  end
-
-  def fuer_erwachsene
-
-  end
 end
