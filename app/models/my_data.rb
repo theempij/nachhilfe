@@ -1,5 +1,5 @@
 class MyData
   def self.email
-    "a@a.com"
+    "sprachunterrichtonline@gmail.com"
   end
 end
