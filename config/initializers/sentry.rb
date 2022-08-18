@@ -1,4 +1,5 @@
 Sentry.init do |config|
+  config.environments = %w[ production staging ]
   config.dsn = 'https://d14a4e58823d4c09b4c3b894595e6981@o379868.ingest.sentry.io/6645886'
   config.breadcrumbs_logger = [:active_support_logger, :http_logger]
 
