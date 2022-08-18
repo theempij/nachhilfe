@@ -13,3 +13,48 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    background: #FFFFDD;
+}
+
+h1 {
+    color: #1F5E9C;
+    font-family: Open Sans, Helvetica, Arial, sans-serif
+}
+
+h2 {
+    color: #1F5E9c;
+    font-family: Open Sans, Helvetica, Arial, sans-serif
+}
+
+p {
+    color: #1F5E9C;
+    font-family: Open Sans, Helvetica, Arial, sans-serif
+}
+
+ul {
+    color: #1F5E9C;
+    font-family: Open Sans, Helvetica, Arial, sans-serif
+}
+
+li {
+    color: #1F5E9C;
+    font-family: Open Sans, Helvetica, Arial, sans-serif
+}
+
+a {
+    color: #1F5E9C;
+    font-family: Open Sans, Helvetica, Arial, sans-serif
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
