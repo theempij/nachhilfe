@@ -6,7 +6,7 @@ class HauptController < ActionController::Base
   end
 
   def impressum
-
+    @noindex = true
   end
 
 end
